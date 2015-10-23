@@ -19,4 +19,10 @@ public class AppTest {
     Assert.assertTrue(App.load());
   }
 
+  @Test
+  public void test2() {
+    App app = new App();
+    app.load();
+  }
+
 }
