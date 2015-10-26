@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.security.NoSuchAlgorithmException;
 
-public class PasswordEncryptionTest2 extends CommonBaseTest {
+public class PasswordEncryptionTest3 extends CommonBaseTest2 {
 
     @Test
     public void coverClassName() {
