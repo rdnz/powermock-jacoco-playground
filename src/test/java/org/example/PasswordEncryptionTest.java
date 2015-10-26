@@ -2,10 +2,18 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.security.NoSuchAlgorithmException;
 
-public class PasswordEncryptionTest extends CommonBaseTest {
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = PasswordEncryption.class)
+public class PasswordEncryptionTest {
+
     @Test
     public void coverClassName() {
         PasswordEncryption liferayPasswordEncryption = new PasswordEncryption();
